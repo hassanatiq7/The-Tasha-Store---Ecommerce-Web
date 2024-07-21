@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <div class="text-white bg-red-700 text-center py-1 md:w-auto">
+      <p class="grow">
+        Free Shipping All Over <span class="font-bold">Pakistan</span> Within
+        24hrs Delivery in <span class="font-bold">Karachi</span> |
+        <span class="font-bold">2 Years Warranty</span> for All Products
+      </p>
+    </div>
+
+    <!-- navbar -->
+    <div class="navbar bg-white px-6">
+      <div class="flex-1">
+        <a class="btn btn-ghost text-xl text-slate-700">THE TASHA STORE</a>
+      </div>
+      <div class="flex-none gap-2">
+        <div class="form-control">
+          <input
+            type="text"
+            placeholder="Search"
+            class="input bg-white input-bordered rounded-full w-auto md:w-96"
+          />
+        </div>
+        <button class="btn btn-active btn-neutral text-slate-100">
+          Search
+        </button>
+      </div>
+    </div>
+
+    <!-- links --> 
+    <div class="flex justify-center bg-slate-100 ">
+      <ul class="menu menu-horizontal px-1 ">
+        <li class="z-40">
+          <details >
+            <summary class="text-slate-700 font-semibold">
+              Health & Beauty
+            </summary>
+            <ul class="p-2">
+              <li><a>Submenu 1</a></li>
+              <li><a>Submenu 2</a></li>
+            </ul>
+          </details>
+        </li>
+        <li class="z-40">
+          <details>
+            <summary class="text-slate-700 font-semibold">
+              Household Appliances
+            </summary>
+            <ul class="p-2">
+              <li><a>Submenu 1</a></li>
+              <li><a>Submenu 2</a></li>
+            </ul>
+          </details>
+        </li>
+        <li class="z-40">
+          <details>
+            <summary class="text-slate-700 font-semibold">
+              Kitchen Appliances
+            </summary>
+            <ul class="p-2">
+              <li><a>Submenu 1</a></li>
+              <li><a>Submenu 2</a></li>
+            </ul>
+          </details>
+        </li>
+        <li class="text-slate-700 font-semibold"><a>Smart Accesories</a></li>
+      </ul>
+    </div>
+
+    <!-- carousel -->
+    <div class="z-0">
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"
+            class="w-full"
+          />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
+            class="w-full"
+          />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg"
+            class="w-full"
+          />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg"
+            class="w-full"
+          />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- heading -->
+    <div class="flex flex-col items-center my-5 space-y-4 text-white">
+      <p class="text-4xl">
+        <a href="#" class="cursor-pointer hover:text-red-500"
+          >Home Appliances</a
+        >
+      </p>
+      <p class="text-xl">
+        The modern invention of home appliances at The Tasha Store Pakistan
+      </p>
+    </div>
+
+    <!-- cards -->
+
+    <div class="flex flex-col md:flex-row md:space-x-2.5 justify-center my-10">
+      <div class="card my-2.5">
+        <div class="image-full">
+          <figure>
+            <img
+              src="https://www.westpoint.pk/cdn/shop/files/kitchen_appliance_580x.jpg?v=1644318115"
+              alt=""
+            />
+          </figure>
+        </div>
+      </div>
+      <div class="flex-col space-y-2.5 my-2.5">
+        <div class="card">
+          <div class="image-full">
+            <figure>
+              <img
+                src="https://www.westpoint.pk/cdn/shop/files/catagery_banner_2_copy_580x.jpg?v=1699596581"
+                alt=""
+              />
+            </figure>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image-full">
+            <figure>
+              <img
+                src="https://www.westpoint.pk/cdn/shop/files/beauty_and_health_580x.jpg?v=1644318115"
+                alt=""
+              />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- best selling -->
+
+    <div class="flex flex-col items-center my-5 space-y-4 text-white">
+      <p class="text-4xl">
+        <a href="#" class="cursor-pointer hover:text-red-500">Best Sellers</a>
+      </p>
+      <p class="text-xl">TOP PRODUCTS OF THIS WEEK</p>
+    </div>
+
+    <!-- products cards -->
+    <div class="flex flex-col items-center my-10 md:space-y-3">
+      <div class="flex flex-col my-2 md:flex-row md:space-x-3">
+        <div
+          class="card card-compact w-56 md:w-64 md:h-96 shadow-xl bg-white my-2"
+        >
+          <figure>
+            <img
+              src="https://www.westpoint.pk/cdn/shop/products/WF6300RKC-01_220x.jpg?v=1631183867"
+              alt="Shoes"
+            />
+          </figure>
+          <div
+            class="card-body bg-slate-400 text-slate-900 border rounded-b-xl border-slate-400"
+          >
+            <h2 class="card-title">WF-6300RKC</h2>
+            <p>Convection Rotisserie Oven with Kebab Grill</p>
+            <p class="font-semibold text-lg">Rs.15,040.00</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-active btn-neutral text-white">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card card-compact my-2 w-56 md:w-64 md:h-96 shadow-xl bg-white"
+        >
+          <figure>
+            <img
+              src="https://www.westpoint.pk/cdn/shop/products/WF05-01_grande.jpg?v=1631183847"
+              alt="Shoes"
+            />
+          </figure>
+          <div
+            class="card-body bg-slate-400 text-slate-900 border rounded-b-xl border-slate-400"
+          >
+            <h2 class="card-title">WF-7806</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <p class="font-semibold text-lg">Rs.12,650.00</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-active btn-neutral text-white">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card card-compact my-2 w-56 md:w-64 md:h-96 shadow-xl bg-white"
+        >
+          <figure>
+            <img
+              src="https://www.westpoint.pk/cdn/shop/files/WF-5257NEW_220x.jpg?v=1710316241"
+              alt="Shoes"
+            />
+          </figure>
+          <div
+            class="card-body bg-slate-400 text-slate-900 border rounded-b-xl border-slate-400"
+          >
+            <h2 class="card-title">WF-555</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p class="font-semibold text-lg">Rs.23,040.00</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-active btn-neutral text-white">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card card-compact my-2 w-56 md:w-64 md:h-96 shadow-xl bg-white"
+        >
+          <figure>
+            <img
+              src="https://www.westpoint.pk/cdn/shop/products/WF142-01_220x.jpg?v=1631183820"
+              alt="Shoes"
+            />
+          </figure>
+          <div
+            class="card-body bg-slate-400 text-slate-900 border rounded-b-xl border-slate-400"
+          >
+            <h2 class="card-title">WF-272</h2>
+            <p>Lorem ipsum dolor sit.</p>
+            <p class="font-semibold text-lg">Rs.22,480.00</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-active btn-neutral text-white">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col my-0.5 md:flex-row md:space-x-3">
+        <div
+          class="card card-compact my-2 w-56 md:w-64 md:h-96 shadow-xl bg-white"
+        >
+          <figure>
+            <img
+              src="https://www.westpoint.pk/cdn/shop/products/WF6300RKC-01_220x.jpg?v=1631183867"
+              alt="Shoes"
+            />
+          </figure>
+          <div
+            class="card-body bg-slate-400 text-slate-900 border rounded-b-xl border-slate-400"
+          >
+            <h2 class="card-title">WF-6300RKC</h2>
+            <p>Convection Rotisserie Oven with Kebab Grill</p>
+            <p class="font-semibold text-lg">Rs.15,040.00</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-active btn-neutral text-white">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card card-compact my-2 w-56 md:w-64 md:h-96 shadow-xl bg-white"
+        >
+          <figure>
+            <img
+              src="https://www.westpoint.pk/cdn/shop/products/WF05-01_grande.jpg?v=1631183847"
+              alt="Shoes"
+            />
+          </figure>
+          <div
+            class="card-body bg-slate-400 text-slate-900 border rounded-b-xl border-slate-400"
+          >
+            <h2 class="card-title">WF-7806</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <p class="font-semibold text-lg">Rs.12,650.00</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-active btn-neutral text-white">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card card-compact my-2 w-56 md:w-64 md:h-96 shadow-xl bg-white"
+        >
+          <figure>
+            <img
+              src="https://www.westpoint.pk/cdn/shop/files/WF-5257NEW_220x.jpg?v=1710316241"
+              alt="Shoes"
+            />
+          </figure>
+          <div
+            class="card-body bg-slate-400 text-slate-900 border rounded-b-xl border-slate-400"
+          >
+            <h2 class="card-title">WF-555</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p class="font-semibold text-lg">Rs.23,040.00</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-active btn-neutral text-white">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card card-compact my-2 w-56 md:w-64 md:h-96 shadow-xl bg-white"
+        >
+          <figure>
+            <img
+              src="https://www.westpoint.pk/cdn/shop/products/WF142-01_220x.jpg?v=1631183820"
+              alt="Shoes"
+            />
+          </figure>
+          <div
+            class="card-body bg-slate-400 text-slate-900 border rounded-b-xl border-slate-400"
+          >
+            <h2 class="card-title">WF-272</h2>
+            <p>Lorem ipsum dolor sit.</p>
+            <p class="font-semibold text-lg">Rs.22,480.00</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-active btn-neutral text-white">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- cards -->
+    <div class="flex flex-row justify-center space-x-3.5 my-10">
+      <div class="card">
+        <div class="image-full">
+          <figure>
+            <img
+              src="https://www.westpoint.pk/cdn/shop/files/catagery_banner_2_copy_580x.jpg?v=1699596581"
+              alt=""
+            />
+          </figure>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image-full">
+          <figure>
+            <img
+              src="https://www.westpoint.pk/cdn/shop/files/beauty_and_health_580x.jpg?v=1644318115"
+              alt=""
+            />
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <!-- heading 3 -->
+    <div class="flex flex-col items-center my-10 space-y-4 text-white">
+      <p class="text-4xl">
+        <a href="#" class="cursor-pointer hover:text-red-500"
+          >HOUSEHOLD ITEMS</a
+        >
+      </p>
+      <p class="text-xl">
+        Our household items are designed to enhance the flavors of electronics
+        and inspire culinary creativity
+      </p>
+    </div>
+
+    <!-- product cards 2 -->
+    <div class="flex flex-col items-center my-10 md:space-y-3">
+      <div class="flex flex-col my-2 md:flex-row md:space-x-3">
+        <div
+          class="card card-compact w-56 md:w-64 md:h-96 shadow-xl bg-white my-2"
+        >
+          <figure>
+            <img
+              src="https://www.westpoint.pk/cdn/shop/products/WF6300RKC-01_220x.jpg?v=1631183867"
+              alt="Shoes"
+            />
+          </figure>
+          <div
+            class="card-body bg-slate-400 text-slate-900 border rounded-b-xl border-slate-400"
+          >
+            <h2 class="card-title">WF-6300RKC</h2>
+            <p>Convection Rotisserie Oven with Kebab Grill</p>
+            <p class="font-semibold text-lg">Rs.15,040.00</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-active btn-neutral text-white">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card card-compact my-2 w-56 md:w-64 md:h-96 shadow-xl bg-white"
+        >
+          <figure>
+            <img
+              src="https://www.westpoint.pk/cdn/shop/products/WF05-01_grande.jpg?v=1631183847"
+              alt="Shoes"
+            />
+          </figure>
+          <div
+            class="card-body bg-slate-400 text-slate-900 border rounded-b-xl border-slate-400"
+          >
+            <h2 class="card-title">WF-7806</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <p class="font-semibold text-lg">Rs.12,650.00</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-active btn-neutral text-white">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card card-compact my-2 w-56 md:w-64 md:h-96 shadow-xl bg-white"
+        >
+          <figure>
+            <img
+              src="https://www.westpoint.pk/cdn/shop/files/WF-5257NEW_220x.jpg?v=1710316241"
+              alt="Shoes"
+            />
+          </figure>
+          <div
+            class="card-body bg-slate-400 text-slate-900 border rounded-b-xl border-slate-400"
+          >
+            <h2 class="card-title">WF-555</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p class="font-semibold text-lg">Rs.23,040.00</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-active btn-neutral text-white">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card card-compact my-2 w-56 md:w-64 md:h-96 shadow-xl bg-white"
+        >
+          <figure>
+            <img
+              src="https://www.westpoint.pk/cdn/shop/products/WF142-01_220x.jpg?v=1631183820"
+              alt="Shoes"
+            />
+          </figure>
+          <div
+            class="card-body bg-slate-400 text-slate-900 border rounded-b-xl border-slate-400"
+          >
+            <h2 class="card-title">WF-272</h2>
+            <p>Lorem ipsum dolor sit.</p>
+            <p class="font-semibold text-lg">Rs.22,480.00</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-active btn-neutral text-white">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col my-0.5 md:flex-row md:space-x-3">
+        <div
+          class="card card-compact my-2 w-56 md:w-64 md:h-96 shadow-xl bg-white"
+        >
+          <figure>
+            <img
+              src="https://www.westpoint.pk/cdn/shop/products/WF6300RKC-01_220x.jpg?v=1631183867"
+              alt="Shoes"
+            />
+          </figure>
+          <div
+            class="card-body bg-slate-400 text-slate-900 border rounded-b-xl border-slate-400"
+          >
+            <h2 class="card-title">WF-6300RKC</h2>
+            <p>Convection Rotisserie Oven with Kebab Grill</p>
+            <p class="font-semibold text-lg">Rs.15,040.00</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-active btn-neutral text-white">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card card-compact my-2 w-56 md:w-64 md:h-96 shadow-xl bg-white"
+        >
+          <figure>
+            <img
+              src="https://www.westpoint.pk/cdn/shop/products/WF05-01_grande.jpg?v=1631183847"
+              alt="Shoes"
+            />
+          </figure>
+          <div
+            class="card-body bg-slate-400 text-slate-900 border rounded-b-xl border-slate-400"
+          >
+            <h2 class="card-title">WF-7806</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <p class="font-semibold text-lg">Rs.12,650.00</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-active btn-neutral text-white">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card card-compact my-2 w-56 md:w-64 md:h-96 shadow-xl bg-white"
+        >
+          <figure>
+            <img
+              src="https://www.westpoint.pk/cdn/shop/files/WF-5257NEW_220x.jpg?v=1710316241"
+              alt="Shoes"
+            />
+          </figure>
+          <div
+            class="card-body bg-slate-400 text-slate-900 border rounded-b-xl border-slate-400"
+          >
+            <h2 class="card-title">WF-555</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p class="font-semibold text-lg">Rs.23,040.00</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-active btn-neutral text-white">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card card-compact my-2 w-56 md:w-64 md:h-96 shadow-xl bg-white"
+        >
+          <figure>
+            <img
+              src="https://www.westpoint.pk/cdn/shop/products/WF142-01_220x.jpg?v=1631183820"
+              alt="Shoes"
+            />
+          </figure>
+          <div
+            class="card-body bg-slate-400 text-slate-900 border rounded-b-xl border-slate-400"
+          >
+            <h2 class="card-title">WF-272</h2>
+            <p>Lorem ipsum dolor sit.</p>
+            <p class="font-semibold text-lg">Rs.22,480.00</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-active btn-neutral text-white">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- heading 5 -->
+    <div class="flex flex-col items-center my-6 space-y-2 text-white">
+      <p class="text-4xl">
+        <a href="#" class="cursor-pointer hover:text-red-500"
+          >Join the Conversation</a
+        >
+      </p>
+      <p class="text-xl">Connect with us</p>
+    </div>
+
+    <!-- social platforms logo -->
+    <div class="flex justify-center space-x-16 my-6">
+      <div class="avatar">
+        <div class="w-24 rounded-full">
+          <a href="#">
+            <img src="./1.png" />
+          </a>
+        </div>
+      </div>
+      <div class="avatar">
+        <div class="w-24 rounded-full">
+          <a href="#">
+            <img src="./2.png" />
+          </a>
+        </div>
+      </div>
+      <div class="avatar">
+        <div class="w-24 rounded-full">
+          <a href="">
+            <img src="./3.png" />
+          </a>
+        </div>
+      </div>
+      <div class="avatar">
+        <div class="w-24 rounded-full">
+          <a href="">
+            <img src="./4.png" />
+          </a>
+        </div>
+      </div>
+      <div class="avatar">
+        <div class="w-24 rounded-full">
+          <a href="">
+            <img src="./5.png" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer p-10 bg-base-200 text-base-content">
+      <nav>
+        <h6 class="footer-title">Categories</h6>
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Company</h6>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Customer Service</h6>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Contact Us</h6>
+      </nav>
+    </footer>
+  </body>
+</html>
